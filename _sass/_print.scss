@@ -1,61 +1,119 @@
-@media print {
-  @page {
-    size: A4;
-  }
-  body {
-    font-size: 9pt;
-    background-color: white;
-    padding: 0;
-  }
-  .wrapper {
-    max-width: 100%;
-  }
+/* keep blocks together (apply only to small units like .entry, not whole sections) */
+.avoid-break { break-inside: avoid; page-break-inside: avoid; }
 
-  //   img.avatar {
-  //     filter: grayscale(1);
-  //     -webkit-filter: greyscale(1);
-  //   }
-  .main-wrapper .time {
-    padding: 10px 30px 10px 10px;
-    //  float: right;
-    //  color: black !important;
-    -webkit-print-color-adjust: exact;
-  }
-  .sidebar-wrapper {
-    position: static;
-    //  float: right;
-    //  width: 40%;
-    -webkit-print-color-adjust: exact;
-  }
+/* explicit page breaks you can drop between sections if needed */
+.html2pdf__page-break { height:0 !important; break-before: page; page-break-before: always; }
 
-  .remove-container.container-block {
-    display: none;
-  }
+/* while exporting: ensure white background and kill transforms/filters that confuse html2canvas */
+body.exporting #export-root,
+body.exporting .wrapper { background: #ffffff !important; }
+body.exporting #export-root *,
+body.exporting .wrapper * { transform: none !important; filter: none !important; transition: none !important; }
 
-  footer {
-    display: none;
-  }
+/* hide UI during export */
+body.exporting .pdf-button,
+body.exporting .print-button { display: none !important; }
 
-  .skillset,
-  .container-block {
-    break-inside: avoid;
-  }
+/* A4-safe width for the render node so html2pdf paginates perfectly */
+:root { --a4-width-px: 794px; } /* 8.27in * 96dpi ≈ 794 */
+body.exporting #export-root,
+body.exporting .wrapper { max-width: var(--a4-width-px) !important; max-height: 10000; width: var(--a4-width-px) !important; margin: 0 auto !important; }
 
-  .skillset .level-bar-inner {
-    background-color: $theme-color !important;
-    -webkit-print-color-adjust: exact;
-  }
+/* Make sure nothing crops */
+*, *::before, *::after { overflow: visible !important; }
 
-   .fa-inverse,
-   .fa-inverse:after,
-   .fa-inverse:before {
-     color: #ffffff !important;
-   }
-
-    /* Hide buttons when printing */
-    .print-button,
-    .pdf-button,
-    .d-print-none {
-        display: none !important;
-    }
+/* Exact avatar size/crop just for export */
+:root{
+  --avatar-w: 180px;
+  --avatar-h: 220px;
 }
+body.exporting .avatar{
+  width: var(--avatar-w) !important;
+  height: var(--avatar-h) !important;
+  display: block !important;
+  margin: 0 auto 16px !important;
+  object-fit: cover !important;
+  object-position: top center !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+body.exporting .profile-container,
+body.exporting .sidebar-wrapper{
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* If any column uses position: sticky/fixed on screen, neutralize during export */
+body.exporting .sidebar-wrapper,
+body.exporting .main-wrapper {
+  position: static !important;
+}
+
+/* Prevent section clipping: allow sections to split but keep individual entries together */
+.section { break-inside: auto; page-break-inside: auto; }
+.entry, .container-block, .skillset li, .experience-item {
+  break-inside: avoid; page-break-inside: avoid;
+}
+
+/* Kill fixed heights in print/export */
+body.exporting .sidebar-wrapper,
+body.exporting .main-wrapper,
+body.exporting .section,
+body.exporting .entry {
+  height: auto !important;
+  max-height: none !important;
+}
+
+/* Print styles (for Ctrl/Cmd+P fallback too) */
+@media print {
+  :root { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  @page { size: A4; margin: 12mm; }
+
+  .print-button, .pdf-button, .d-print-none, footer { display: none !important; }
+
+  body { font-size: 9pt; background-color: white; padding: 0; }
+  .wrapper { max-width: 100%; }
+
+  .section { break-inside: auto; page-break-inside: auto; }
+  .entry, .container-block, .skillset li, .experience-item { break-inside: avoid; page-break-inside: avoid; }
+
+  .html2pdf__page-break { height:0 !important; break-before: page; page-break-before: always; }
+}
+
+/* Remove JS-style comments you had like `//` — use proper CSS comments only. */
+:root { --avatar-w: 180px; }  /* tweak: 150–200px usually looks right */
+
+body.exporting .avatar{
+  width: var(--avatar-w) !important; /* or 100% if you want full sidebar width */
+  height: auto !important;           /* <-- stop squashing */
+  aspect-ratio: 3 / 4 !important;    /* portrait; try 1/1 for square, or 9/11 */
+  object-fit: cover !important;      /* crop instead of stretch */
+  object-position: top center !important;
+  display: block !important;
+  margin: 0 auto 16px !important;
+}
+
+/* existing (examples) */
+:root{
+  --export-w: 794px;   /* A4-ish width */
+  --gap: 24px;
+  --sidebar-w: 260px;  /* current */
+}
+
+/* PDF only: make the sidebar wider */
+body.exporting{ --sidebar-w: 300px; }            /* ⬅️ adjust */
+body.exporting .sidebar-wrapper{
+  float: left !important;
+  width: var(--sidebar-w) !important;
+  margin-right: var(--gap) !important;
+}
+body.exporting .main-wrapper{
+  float: left !important;
+  width: calc(var(--export-w) - var(--sidebar-w) - var(--gap)) !important;
+}
+
+/* keep the photo proportional */
+body.exporting .avatar{ width: 100% !important; height: auto !important; object-fit: cover !important; }

@@ -9,11 +9,8 @@
 {% include head.html %}
 
 <body>
-  <button onclick="print()" class="print-button d-print-none">
-    <i class="fas fa-file-pdf"></i>Print
-  </button>
 
-  <button onclick="generatePDF()" class="pdf-button d-print-none" id="pdfButton">
+  <button onclick="downloadPDF()" class="pdf-button d-print-none" id="pdfButton">
     <i class="fas fa-file-pdf"></i>PDF
   </button>
 
@@ -25,10 +22,18 @@
     </div>
   </div>
 
+  <div class="exp-item avoid-break">…</div>
+<section class="section about avoid-break">…</section>
+
   {% include footer.html %}
 
   {% include scripts.html %}
   <script src="{{ site.baseurl }}/assets/js/pdf-generator.js"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js"
+  defer
+  onload="window._h2p_ready = true"
+></script>
 </body>
 
 </html>

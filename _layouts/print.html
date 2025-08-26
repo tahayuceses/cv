@@ -17,6 +17,13 @@
       max-width: unset !important;
     }
   </style>
+
+
+  <style>
+  .avoid-break { break-inside: avoid; page-break-inside: avoid; }
+  /* Optional: pause animations while exporting */
+  body.exporting * { transition: none !important; animation: none !important; }
+</style>
   <body>
     <div class="wrapper">
       {% include sidebar.html %}

@@ -1,25 +1,26 @@
 ---
 layout: print
-permalink: /print
+permalink: /print/
 ---
 
+<div class="wrapper" id="export-root">
+  {% include career-profile.html %}
 
-{% include career-profile.html %}
+  {% unless site.data.data.sidebar.education %}
+    {% include education.html %}
+  {% endunless %}
 
-{% unless site.data.data.sidebar.education %}
-  {% include education.html %}
-{% endunless %}
+  {% include experiences.html %}
+  <div class="html2pdf__page-break"></div>
 
-{% include experiences.html %}
+  {% include certifications.html %}
+  {% include projects.html %}
+  <div class="html2pdf__page-break"></div>
 
-{% include certifications.html %}
+  {% include oss-contributions.html %}
+  {% include publications.html %}
+  <div class="html2pdf__page-break"></div>
 
-{% include projects.html %}
-
-{% include oss-contributions.html %}
-
-{% include publications.html %}
-
-{% include recommendations.html %}
-
-{% include skills.html %}
+  {% include recommendations.html %}
+  {% include skills.html %}
+</div>
