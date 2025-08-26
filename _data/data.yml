@@ -3,29 +3,29 @@
 #
 
 sidebar:
-  position: right # position of the sidebar : left or right
+  position: left # position of the sidebar : left or right
   about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
   education: True # set to False if you want education in main section instead of in sidebar
 
   # Profile information
-  name: Alan Doe
-  tagline: Full Stack Developer
-  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  name: Taha Yüceses
+  tagline: Digital Marketing Specialist
+  avatar: pp.jpeg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: example@email.com
-  phone: 012 345 6789
-  timezone: America/Cancun # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  email: tahayuceses1999@gmail.com
+  phone: +90 531 515 31 19
+  timezone: Turkey/Istanbul # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   citizenship:
-  website: https://example.com/ # Include the full website URL, including "http://" or "https://".
-  linkedin: alandoe
-  xing: alandoe
-  github: jekyll
+  website: 
+  linkedin: taha-yüceses
+  xing: 
+  github: 
   telegram: # add your nickname without '@' sign
   gitlab:
   bitbucket:
-  bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
-  twitter: '@jekyllrb'
+  bluesky:  # Specify your full Bluesky handle
+  twitter: 
   stack-overflow: # Number/Username, e.g. 123456/alandoe
   codewars:
   goodreads: # Number-Username, e.g. 123456-alandoe
@@ -37,250 +37,155 @@ sidebar:
   languages:
     title: Languages
     info:
-    - idiom: English
+    - idiom: Turkish
       level: Native
 
+    - idiom: English
+      level: B2
+
     - idiom: French
-      level: Professional
-
-    - idiom: Spanish
-      level: Professional
-
-  interests:
-    title: Interests
-    info:
-    - item: Climbing
-      link:
-
-
-    - item: Snowboarding
-      link:
-
-
-    - item: Cooking
-      link:
+      level: A2
 
 
 career-profile:
-  title: Career Profile
+  title: About
   summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
+    Results-oriented marketing and advertising professional with experience across digital marketing, customer support, and account management. 
+    Skilled in optimizing campaigns with Amazon Ads, Google Ads, and Google Analytics to drive sales growth and improve ROI. 
+    Proven ability to analyze performance metrics, design tailored strategies, and deliver actionable reports. 
+    Strong background in project coordination, content management, and customer engagement, complemented by academic training in International Relations and Political Science (Master’s). 
+    Multilingual (Turkish, English, French) with international publishing and volunteering experience, bringing a blend of analytical, communication, and organizational skills to fast-paced, cross-functional environments.
 education:
   title: Education
   info:
-  - degree: MSc in Computer Science
-    university: University of London
-    time: 2011 - 2012
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - degree: BSc in Applied Mathematics
-    university: Bristol University
-    time: 2007 - 2011
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
+  - degree: Master's Degree - Social Sciences Institute of Sciences Politics
+    university: Istanbul University
+    time: 2021 - 2023
+  - degree: Bachelor Degree - International Relations
+    university: Kırklareli University
+    time: 2017 - 2021
 
 experiences:
   title: Experiences
   info:
-  - role: Lead Developer
-    time: 2015 - Present
-    company: Startup Hubs, San Francisco
+  - role: 3P Ads Account Executive
+    time: 05/05/2025 - Present
+    company: Amazon – Istanbul, Türkiye
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-        - Bullet point
-        - Bullet point
-  - role: Senior Software Engineer
-    time: 2014 - 2015
+        - Supported third-party sellers within the MAS (Marketplace Ads Support) project to become active and successful on Amazon Ads.
+        - Conducted one-on-one meetings with sellers, explaining the Amazon Ads ecosystem and setting up advertising campaigns.
+        - Optimized existing campaigns through regular performance reviews with sellers.
+        - Analyzed key advertising metrics (ROAS, ACOS, CTR, Conversion Rate, Clicks) and provided actionable reports.
+        - Performed keyword research and developed strategies to enhance campaign performance.
+        - Designed tailored advertising solutions aligned with seller's goals and budgets, driving sales growth.
+        - Delivered weekly performance reports highlighting campaign results and optimization opportunities.
+        - Acted as a bridge between the Amazon Ads and 3P departments, maintaining continuous communication with Account Managers and managing advertising operations for their sellers.
+  - role: Digital Marketing Assistant Specialist
+    time: 02/10/2024 - 13/03/2025
     company: Google, London
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - role: UI Developer
-    time: 2012 - 2014
-    company: Amazon, London
+        - Analyzed Google Analytics and Google Ads data on a weekly and monthly basis, providing detailed performance reports to senior management.
+        - Prepared KPI, sales, and search term reports to support campaign optimization.
+        - Conducted campaign budget planning and monitored conversion rates with regular reporting.
+        - Reviewed user experience data via Hotjar and provided actionable recommendations for improvement.
+        - Performed monthly keyword analyses, implemented negative keywords, and managed enhanced conversions tracking.
+  - role: Project Assistant
+    time: 06/02/2024 - 27/09/2024
+    company: Evronas Events – Istanbul, Türkiye
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
+        - Coordinated the process by directly communicating with speakers participating in scientific congresses.
+        - Organized and monitored participants’ travel and accommodation arrangements.
+        - Managed the design and content of the congress website.
+        - Developed and implemented email marketing strategies to promote the congress.
+  - role: Marketing - Customer Support Specialist
+    time: 05/08/2021 - 05/09/2023
+    company: Clotie – Istanbul, Türkiye
+    details: |
+        - Conducted conversion analyses based on marketing funnel metrics, contributing to customer acquisition.
+        - Designed and executed email campaigns for potential customers and conducted satisfaction calls with long-term subscribers.
+        - Managed broad and exact match campaigns on Google Ads.
+        - Extracted and analyzed bounce rate metrics from marketing data.
+        - (October 2022 – September 2023) As part of the Customer Support Team:
+          - Responded to international customers’ emails and social media messages,
+          - Managed domestic customer email communications,
+          - Reported on returned product processes.        
+  - role: Assistant Editor
+    time: 02/2021 - 04/2021
+    company: EURO POLITICS Journal – Istanbul, Türkiye
+    details: |
+        - Translated and published the article “Unexpected Alliances in Europe: France and the Baltics” into Turkish.
+        - Conducted transcription analyses and prepared agenda reports.
+        - Authored research articles and book content (e.g., “Bulgarian Policies” chapter in EU Countries Before and After Covid-19).  
 
 certifications:
-  title: Certifications
+  title: Social and Volunteer Activities
   list:
-  - name: CV Builder
+  - name: Social Media Manager
+    start: 2019
+    end: 2020
+    organization: Kırklareli University Department of International Relations Board
+    credentialid:
+    credentialurl:
+    credentialname:
+    details: |
+      Between September 2019 and May 2020, I took an active role in the board of directors of Kırklareli University International Relations Club and played an active role in the club's R&D activities, social media management and table meeting organizations.
+      
+  - name: English Teacher
     start: 2020
     end: 2021
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.google.com
-    credentialname: Google
+    organization: Asylum and Migration Research Center
+    credentialid:
+    credentialurl:
+    credentialname:
     details: |
-      Details about cert. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
-
-      Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-      fringilla vel. Ut euismod, sem sed vulputate venenatis,
-      justo diam viverra velit, sed rhoncus leo leo eu justo.
-      Suspendisse placerat risus ante, sed porta nisi blandit at.
-  - name: Git learning
-    start: 2019
-    end:
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.github.com
-    credentialname: Github
-    details: |
-      Older certification. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
+      Online English lessons were given to young Syrian students who immigrated to our country.
 
 projects:
   title: Projects
   intro: >
-    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
   assignments:
-  - title: Velocity
-    link: "#hook"
-    tagline: "A responsive website template designed to help startups promote, market and sell their products."
-
-  - title: DevStudio
-    link: "#"
-    tagline: "A responsive website template designed to help web developers/designers market their services."
-
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-oss:
-  title: OSS Contributions
-  intro: >
-    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  contributions:
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+  - title: Weekly Balkans Bulletin (Croatia)
+    link: https://www.tuicakademi.org/haftalik-balkan-bulteni-11-14-nisan/
+    tagline: I worked on the "Balkan Bulletin," a weekly magazine published by the Turkish International Relations Studies (TUİÇ) Association, between January 2021 and April 2021. Focusing on Croatia, I made regular contributions to the magazine by researching and translating important political developments in the country.
 
 publications:
   title: Publications
   intro: |
-    You can list your publications in this section. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-    bibendum fringilla a eu lectus.
+    
   papers:
-  - title: The Art of Computer Programming
-    link: "#"
-    authors: Donald E. Knuth
-    conference: Addison-Wesley, 1968
+  - title: Article / Global Food Crisis / Diplomatic Strategy
+    link: https://www.academia.edu/57895979/KURESEL_GIDA_KRIZI
+    authors: 
+    conference: 
 
-  - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-    link: "#"
-    authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-    conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-  - title: A syntax directed compiler for Algol 60
-    link: "#"
-    authors: Edgar T. Irons
-    conference: "Comm. ACM 4 (1961), 51–55"
-
-recommendations:
-  title: Recommendations
-  list:
-  - person: Yareli Perez
-    email: perezyareli@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      Alan Doe is a super employee!
-  - person: Lara Henderson
-    email: larah@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      I would like to work with Alan Doe again!
-
-      He is a great employee!
+  - title: Article / Basque Nationalism in Spain / Stratejik Ortak
+    link: https://stratejikortak.com/2021/08/ispanyadaki-baski-milliyetciligi.html
+    authors:
+    conference:
 
 skills:
   title: Skills &amp; Proficiency
 
   toolset:
-  - name: Python & Django
-    level: 98%
+  - name: Digital Marketing
 
-  - name: Javascript & jQuery
-    level: 98%
+  - name: Marketing
 
-  - name: Angular
-    level: 98%
+  - name: E-Mail Marketing
 
-  - name: HTML5 & CSS
-    level: 95%
+  - name: Google Ads
 
-  - name: Ruby on Rails
-    level: 85%
+  - name: Google Analytics
 
   - name: Sketch & Photoshop
-    level: 60%
 
-footer: >
-  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+  - name: Google Search Console
+
+  - name: Google Looker Studio
+
+  - name: Amazon Ads
+
+  - name: Hotjar
+
+  - name: Brevo
+
