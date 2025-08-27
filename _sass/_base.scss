@@ -77,21 +77,12 @@ p {
 
   .avatar {
     //used for profile image
-    max-width: 250px;
+    max-width: 210px;
     margin-bottom: 15px;
     border: 0px solid #fff;
     border-radius: 5%;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   }
-
-  .avatar {
-  width: 210px;
-  height: 220px;         /* set a fixed height */
-  object-fit: cover;     /* crops instead of squashing */
-  object-position: top;  /* keeps the top part, cuts bottom */
-  border-radius: 8px;
-  overflow: hidden;
-}
 
   .contact-list {
     .fas,
